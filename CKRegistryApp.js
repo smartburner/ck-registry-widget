@@ -18,7 +18,7 @@ import CKRegistryListItemLoader from "./components/CKRegistryListItemLoader/CKRe
 const CKRegistryApp = () => {
 
 	const {isLoaded, loadError: mapLoadError} = useLoadScript({
-		googleMapsApiKey: "AIzaSyBKmTDzmK39Hqk-GJWtPC3YCTEbVeEYm_A"
+		googleMapsApiKey: "here_will_be_the_key"
 	});
 
 	const isMobile = useMediaQuery({maxWidth: 767});
