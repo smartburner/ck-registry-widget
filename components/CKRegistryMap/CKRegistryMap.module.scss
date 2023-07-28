@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.ck-registry-map {
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+
+  &-body {
+	width: 100%;
+	height: 100%;
+  }
+}

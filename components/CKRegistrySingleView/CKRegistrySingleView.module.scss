@@ -1,0 +1,50 @@
+.ck-registry-single-view {
+  padding: 20px 16px;
+  height: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 767px) {
+	padding: 0;
+  }
+
+  &__title {
+	font-weight: 700 !important;
+	margin: 0;
+	font-family: "Brother 1816", sans-serif !important;
+  }
+
+  // Info Block with CK Data
+  &-info {
+
+	list-style: none;
+	height: inherit;
+	overflow-y: auto;
+
+	// Data Item in the List (li)
+	&-item {
+
+	  padding-top: 8px;
+	  padding-bottom: 8px;
+
+	  &:first-child {
+		padding-top: 0;
+	  }
+
+	  &:last-child {
+		padding-bottom: 0;
+	  }
+
+	  &__title {
+		margin: 0;
+	  }
+
+	  &__value {
+		color: #70757a;
+	  }
+
+	}
+
+  }
+}

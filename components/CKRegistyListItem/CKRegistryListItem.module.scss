@@ -1,0 +1,43 @@
+@import "../../variables";
+
+.ck-registry-list-item {
+  padding: 15px 30px;
+
+  border-bottom: 1px solid $light-grey;
+  cursor: pointer;
+  background-color: #fff;
+
+  /*&:first-child {
+	padding-top: 0;
+  }*/
+
+  &:last-child {
+	//padding-bottom: 0;
+	border-bottom: none;
+  }
+
+  @media (max-width: 767px) {
+	padding-right: 0;
+	padding-left: 0;
+  }
+
+  &_active, &:hover {
+	background-color: $dark-orange;
+
+	.ck-registry-list-item__title, .ck-registry-list-item-data {
+	  color: #fff;
+	}
+  }
+
+  &__title {
+	margin-top: 0;
+	margin-bottom: 5px !important;
+	font-family: "Brother 1816", sans-serif !important;
+	font-size: 18px !important;
+  }
+
+  &-data {
+	list-style: none;
+	color: #70757a;
+  }
+}

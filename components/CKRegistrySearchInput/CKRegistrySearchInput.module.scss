@@ -1,0 +1,99 @@
+@import "../../variables";
+
+.container {
+  border-radius: inherit;
+  width: 100%;
+}
+
+.input {
+  width: 100% !important;
+  padding: 10px 15px !important;
+  border-radius: inherit !important;
+  color: $text-color !important;
+  background-color: #fff;
+
+  &:disabled {
+	background-color: #e9e9e9;
+
+	&::placeholder {
+	  color: $text-color;
+	}
+  }
+
+
+
+}
+
+.inputOpen {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.inputFocused {
+  outline: none;
+  border-color: $blue !important;
+}
+
+.suggestionsContainer {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  background-color: #fff;
+}
+
+.suggestionsContainerOpen {
+  border-left: 1px solid $blue;
+  border-right: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+}
+
+.suggestionsList {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  list-style: none;
+}
+
+.suggestion {
+  padding: 10px 15px;
+  cursor: pointer;
+  word-break: break-all;
+}
+
+.suggestionHighlighted {
+  background-color: $blue;
+  color: #fff;
+}
+
+.ck-registry-search {
+  &-input-group {
+	border-radius: inherit;
+	position: relative;
+  }
+
+  &__sug-mark {
+	background-color: $dark-orange;
+	color: #fff;
+	border-radius: 2px;
+  }
+
+  &__submit {
+
+	border: none;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+
+	&:hover, &:focus, &:focus-visible {
+	  background-color: transparent;
+	  outline: none;
+	}
+
+	img {
+	  width: 30px;
+	  height: 30px;
+	}
+  }
+}

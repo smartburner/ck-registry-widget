@@ -1,0 +1,41 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.ck-registry {
+
+  &-mobile-headline {
+	margin: 0;
+	font-size: 22px !important;
+	font-weight: 700 !important;
+	text-decoration: underline;
+	color: $dark-orange !important;
+	padding-bottom: 10px;
+
+	@media (max-width: 360px) {
+	  font-size: 20px !important;
+	}
+
+	@media (max-width: 330px) {
+	  font-size: 18px !important;
+	}
+  }
+
+  &-body {
+	height: 100vh;
+	min-height: 700px;
+	position: relative;
+	overflow: hidden;
+
+	&_is-error {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+  }
+
+}
